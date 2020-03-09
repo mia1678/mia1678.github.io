@@ -1,0 +1,79 @@
+/* Mia's Portal Page Stylesheet */
+
+/* Start GLOBAL RULES */
+html{
+    background-color: #ccc; 
+}
+div.wrapper {
+    background-color:#fff;
+    /*color: #000000;  Red Green Blue */ /* #ffffff - white*/ /* first 2 - red, then green and blue*/ /* (green)#0f0 */
+    width:80%;
+    margin:auto;
+    overflow: auto;
+}
+
+p {
+    margin-left:1em;
+}
+
+hi, h2, h3{
+    margin-left: 0.5em;
+}
+
+.pageID{
+    color:#f00;
+}
+
+footer{
+     text-align: center;
+}
+
+
+/* End GLOBAL RULES (every devices will work) */
+
+
+/* Start RESPONSIVE RULES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+
+    img.tablet,img.phone {
+        display:none; /* hiding those images*/
+    }
+    
+    img.desktop {
+        width:50%;
+        float:right;
+    }
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1399px){
+
+    img.desktop, img.phone {
+        display:none;
+    }
+    img.tablet {
+        width:50%;
+        float:left;
+    }
+}
+
+
+/* PHONE */
+@media all and (max-width:500px) {
+
+    div.wrapper {
+    width:100%
+}
+    
+    img.desktop, img.tablet {
+        display:none
+    }
+    
+    img.phone {
+        width:100%;
+    }
+}
+
+/* End RESPONSIVE RULES */

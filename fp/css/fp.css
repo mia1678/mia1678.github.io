@@ -1,0 +1,176 @@
+/* Mia's Portal Page Stylesheet */
+
+/* Start GLOBAL RULES */
+html{
+    background-color: #f9f2f2; 
+}
+div.wrapper {
+    background-color:#fff;
+    width:90%;
+    margin:auto;/* id this is smaller than its parent HTML, then center it within the parent */
+    overflow: auto;/* be aware of any floatd objects and expand to include them */
+}
+
+.logo {
+    color:#000;
+    margin-left: 1%;
+    text-shadow: 1px 1px #ccc;
+    font-size: 1.25em;
+}
+
+p {
+    margin-left:1em;
+}
+
+h1 , h2, h3,h4{
+    margin-left: 1em;
+}
+
+.pageID{
+    color:crimson;
+}
+
+a {
+    color:crimson;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color:crimson;
+    text-decoration: underline;
+}
+
+p.citation {
+    font-size: 0.9em;
+    margin-right: 0.8em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+section.Times {
+    font-size: 1.2em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1>a {
+    color:#000;
+}
+
+h1>a:hover {
+    text-decoration: none;
+}
+
+    .rightarea
+        {
+            float: left;
+            width: 50%;
+        }
+        .leftarea
+        {
+            float: left;
+            width: 50%;
+        }
+
+
+
+div.gallery {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+figure {
+    display: inline-block;
+    margin:.25em;
+}
+
+div.gallery img {
+    -moz-border-radius: 30px 30px 30px 30px;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    border-radius: 30px 30px 30px 30px;
+    border:1px solid #000; /* width style color */
+}
+
+/* using on the elements.html page to get one column 100% because not using two columns on that page */
+.fullwidth {
+    width:100%;
+}
+
+/* START EMBEDRESPONSIVELY.COM RULES */
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%;
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+.embed-container iframe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+/* END EMBEDRESPONSIVELY.COM RULES */
+
+footer{
+    text-align: center;
+    clear: both;
+}
+
+
+/* End GLOBAL RULES (every devices will work) */
+
+/* Start RESPONSIVE RULES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+
+    img.tablet,img.phone {
+        display:none; /* hiding those images*/
+    }
+    
+    img.desktop {
+        width:75%;
+        float:center;
+    }
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1399px){
+
+    img.desktop, img.phone {
+        display:none;
+    }
+    img.tablet {
+        width:70%;
+        float:center;
+    }
+}
+
+
+/* PHONE */
+@media all and (max-width:500px) {
+
+    div.wrapper {
+    width:85%
+}
+    
+    img.desktop, img.tablet {
+        display:none
+    }
+    
+    img.phone {
+        width:100%;
+    }
+}
+
+/* End RESPONSIVE RULES */
+
+
