@@ -1,0 +1,124 @@
+/* Mia's Portal Page Stylesheet */
+
+/* Start GLOBAL RULES */
+html{
+    background-color: #ccc; 
+}
+div.wrapper {
+    background-color:#fff;
+    /*color: #000000;  Red Green Blue */ /* #ffffff - white*/ /* first 2 - red, then green and blue*/ /* (green)#0f0 */
+    width:80%;
+    margin:auto;
+    overflow: auto;
+}
+
+p {
+    margin-left:1em;
+}
+
+h2, h3{
+    margin-left: 0.5em;
+}
+
+h1{
+    margin-left: 15em;
+/*    padding: 0px;　*/
+    width:100%;
+    margin:auto;
+}
+
+.pageID{
+    color:#004d99;
+}
+
+footer{
+     text-align: center;
+}
+
+
+a {
+    color:#004d99;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color:#004d99;
+}
+
+/* End GLOBAL RULES (every devices will work) */
+
+
+/* Start RESPONSIVE RULES */
+
+/* DESKTOP */
+@media all and (min-width:1001px) {
+
+
+    /* left column */
+    section {
+        float:left;
+        width:55%;
+    }
+    
+    /* right column */
+    aside {
+        float:right;
+        width:45%;
+    }
+    
+    img.tablet,img.phone {
+        display:none; /* hiding those images*/
+    }
+    
+    img.desktop {
+        width:90%;
+        float:right;
+    }
+    
+
+}
+
+/* TABLET */
+@media all and (min-width:700px) and (max-width:1000px){
+
+    
+    /* left column */
+    section {
+        float:left;
+        width:55%;
+    }
+    
+    /* right column */
+    aside {
+        float:right;
+        width:45%;
+    }
+    
+    img.desktop, img.phone {
+        display:none;
+    }
+    img.tablet {
+        width:100%;
+        float:right;
+    }
+}
+
+
+/* PHONE */
+@media all and (max-width:699px) {
+
+    div.wrapper {
+    width:100%
+}
+    
+    img.desktop, img.tablet {
+        display:none
+    }
+    
+    img.phone {
+        width:100%;
+    }
+}
+
+/* End RESPONSIVE RULES */
